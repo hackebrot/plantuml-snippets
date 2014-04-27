@@ -1,8 +1,12 @@
+skinparam shadowing false
+
 skinparam class {
     BackgroundColor white
     ArrowColor #A8A8A8
     BorderColor #A8A8A8
 }
-skinparam shadowing false
-skinparam noteBackgroundColor #ADD1B2
-skinparam noteBorderColor #A8A8A8
+
+skinparam note {
+    BackgroundColor #ADD1B2
+    BorderColor #A8A8A8
+}
