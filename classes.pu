@@ -1,5 +1,5 @@
 @startuml
-!include colors.txt
+!include colors.pu
 
 abstract class Transformer {
   + name : str
