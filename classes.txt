@@ -1,0 +1,31 @@
+@startuml
+!include colors.txt
+
+abstract class Transformer {
+  + name : str
+  + transform() : None
+  + get_energy_level() : float
+}
+
+class AutoBot {
+  + is_prime : bool = False
+  + protect_planet( planet : Planet ) : None
+}
+
+class Decepticon {
+  + detroy_planet( planet : Planet ) : None raises PlanetProtectedError
+}
+
+class Energon {
+}
+
+note "Basic example for as class diagram" as N1
+
+Transformer - Energon : needs >
+
+Transformer <|-- AutoBot
+Transformer <|-- Decepticon
+
+AutoBot - Decepticon : defeats >
+
+@enduml
